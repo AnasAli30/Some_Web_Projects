@@ -16,9 +16,45 @@ body{
 
 .header{
     height: 95vh;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(../img/header-image.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/header-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+
+nav{
+    width: 70%;
+    margin: 0 auto;
+}
+nav h1{
+    color: white;
+    float: left;
+}
+
+
+
+
+.nav-items a{
+   /* display: inline-block; */
+   text-decoration: none;
+   color: white;
+   
+}
+
+
+.nav-items li{
+    margin: 6px;
+    display: inline-block;
+    float: right;
+    list-style: none;
+    /* float: right; */
+
+    
+}
+
+.nav::after{
+    content: "";
+    display: block;
+    clear: both;
 }
