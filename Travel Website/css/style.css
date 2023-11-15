@@ -57,7 +57,7 @@ ul,li{
 }
 
 .bg-dark{
-    background-color: #263238;
+    background-color: #000000;
 }
 
 .btn{
@@ -365,7 +365,7 @@ footer div i:hover{
 }
 
 
-section h1{
+.section h1{
     margin-top: 5rem;
     margin-bottom: 0.5rem;
 }
@@ -376,7 +376,7 @@ section h1{
     margin-bottom: 1.2rem;
 }
 
-section p{
+.section p{
     /* padding: 1rem; */
     line-height: 25px;
 }
@@ -440,6 +440,7 @@ section p{
     padding: 1rem;
     background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
     color: white;
+    box-shadow: 0px 5px 10px 0px #aaaaaac2;
 }
 
 .contact p{
