@@ -255,7 +255,7 @@ h1,h2,h3{
 }
 
 .row p{
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     word-break: break-all;
 }
 
