@@ -16,19 +16,24 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .navbar{
+    position: fixed;
     font-size: 1.2rem;
     width: 100%;
     height: 45px;
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.758);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px 0px #aaa;
+    opacity: 0.85;
+    z-index: 10;
 }
 
 .navbar-container{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 80%;
     height: 100%;
@@ -36,20 +41,134 @@ body{
     align-items: center;
 }
 
+.navbar-container input,
+.navbar-container .menu-lines{
+    display: none;
+}
+
 .navbar-container h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
 }
 
-.navbar-container ul{
+.navbar-container .navul{
 }
 
-.navbar-container ul li{
+.navbar-container .menuul li{
     margin: 0.8rem;
     display: inline-block;
 }
 
-.navbar-container ul li a{
+.navbar-container .menuul li a{
     text-decoration: none;
     color: rgb(102, 101, 101);
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-container .menuul li a:hover{
+    color: black;
+}
+
+/* ########3 responsive ############ */
+
+
+@media (max-width:800px) {
+    .navbar-container input,
+    .navbar-container .menu-lines{
+        display: inline-block;
+    }
+
+    .navbar-container{
+        position: relative;
+        flex-direction: row;  
+    }
+    .navbar-container .menuul{
+        /* display: none; */
+    }
+
+    .navbar-container input{
+        height: 3rem;
+        width: 3rem;
+        z-index: 999;
+        opacity: 0;
+    }
+
+    .navbar-container .menu-lines {
+        position: absolute;
+        /* border: 1px solid black; */
+        height: 2.5rem;
+        width: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .menu-lines .lines{
+        width: 100%;
+        background-color: black;
+        height: 3px;
+    }
+
+    .menu-lines .line1{
+        transform-origin: 0% 0%;
+        transition: 0.5s;
+    
+    }
+
+    .menu-lines .line3{
+        transform-origin: 0% 100%;
+        transition: 0.5s;
+    }
+
+    .menu-lines .line2{
+        transition: 0.15s;
+    }
+
+
+
+   
+
+
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-lines .line1{
+        transform: rotate(45deg);
+        margin-left: 9px;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-lines .line3{
+        transform: rotate(-45deg);
+        margin-left: 9px;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-lines .line2{
+        opacity: 0;
+    }
+
+    .navbar-container .menuul{
+        display: inline-block;
+        height: 1000px;
+        width: 300px;
+        border: 1px solid black;
+        transform: translateX(-150%);
+        left: 100px;
+        margin-top: 104rem;
+        transition: 0.5s ease-in-out;
+         /* flex-basis:0;  */
+        
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menuul{
+        transform: translateX(0);
+
+    }
+
+
+    .navbar-container .menuul li{
+        margin: 0.8rem;
+        display: block;
+    }
+
+
+
+    
 }
