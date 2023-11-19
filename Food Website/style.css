@@ -482,14 +482,17 @@ body{
 
 .customer-section{
     margin-top: 16rem;
+    padding-top: 4rem;
+    background-color: #eceaea;
     
 }
 
 .customer-section h1{
     text-align: center;
     margin-bottom: 0;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 3rem;
+    color: #555;
 
 }
 
@@ -522,7 +525,91 @@ body{
     object-position: center;
 }
 
+.customer-section .box .customers span{
+    margin-bottom: 1rem;
+    color: #ff9529;
+}
+
+/* ############ Contact ################ */
 
 
+.contact{
+    height: 500px;
+    background-color: #dddbdb;
+}
 
 
+.contact .box{
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    /* border: 4px solid black; */
+    padding-top: 3rem;
+}
+
+.contact .box .img {
+    height: 420px;
+    width: 50%;
+}
+
+.contact .box .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact .box .us{
+    padding: 1rem;
+    background-color: white;
+    width: 50%;
+}
+
+.contact .box .us h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.contact .box .us input{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid rgb(207, 205, 205);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact .box .us textarea{
+    width: 100%;
+    height: 210px;
+    border: none;
+    border-bottom: 1px solid rgb(207, 205, 205);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* ############3 footer ################ */
+
+footer{
+    background-color: black;
+    height: 80px;
+    padding-top: 2rem;
+}
+
+footer .main{
+    color: white;
+    /* border: 1px solid white; */
+    text-align: center;
+    /* margin-top: 1rem; */
+}
+
+footer .main i{
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+footer .main h3{
+    letter-spacing: 3px;
+}

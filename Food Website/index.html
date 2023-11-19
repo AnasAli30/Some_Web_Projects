@@ -17,19 +17,19 @@
              <div class="lines line3"></div>
             </div>
             <ul class="menuul">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Category</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testa">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <h1 class="logo">FW</h1>
         </div>
     </nav>
 
 
-    <section class="header">
+    <section class="header" id="header">
         <div class="container">
             <div class="content">
                 <h1>Eat right food</h1>
@@ -41,7 +41,7 @@
     </section>
 
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
         <div class="content">
             <div>
@@ -55,7 +55,7 @@
     </div>
 
 
-    <div class="food-section">
+    <div class="food-section" id="category">
         <div class="container">
         <h1>TYPES OF FOOD</h1>
         <div class="img">
@@ -85,7 +85,7 @@
 </div>
 
 
-<div class="food-menu">
+<div class="food-menu" id="menu">
     <div class="container">
     <h1>FOOD MENU</h1>
     <div class="img-container">
@@ -98,7 +98,7 @@
         <p class="price">Price: 250</p></div>
     </div>
 
-    <div class="img-box">
+    <div class="img-box" >
         <img src="./img/food-menu1.jpg" alt="">
         <div>
         <h3>FOOD MENU 2</h3>
@@ -141,24 +141,36 @@
 </div>
 
 
-<div class="customer-section">
+<div class="customer-section" id="testa">
     <div class="container">
         <h1>What Our Customers Say</h1>
         <div class="box">   
             <div class="customers">
-                <p>5 star</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum natus a dolorem nam laboriosam unde iure placeat minus quisquam hic.</p>
                 <img src="./img/male-photo1.jpg" alt="">
                 <p>John</p>
             </div>
             <div class="customers">
-                <p>5 star</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum natus a dolorem nam laboriosam unde iure placeat minus quisquam hic.</p>
                 <img src="./img/male-photo2.jpg" alt="">
                 <p>sins</p>
             </div>
             <div class="customers">
-                <p>5 star</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum natus a dolorem nam laboriosam unde iure placeat minus quisquam hic.</p>
                 <img src="./img/male-photo3.jpg" alt="">
                 <p>Mia</p>
@@ -166,7 +178,66 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <img src="./img/restraunt-image (1).jpg" alt="">
+            </div>
+            <div class="us">
+                <h1>Contact Us</h1>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <a href="" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+    <div class="main">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <h3>Restraunt Website 2020 , all rights reserved.</h3>
+    </div>
+</div>
+</footer>
     
+
+<!-- ###########for smooth scrolling ################## -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     
 </body>
 </html>
