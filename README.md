@@ -38,7 +38,7 @@ If you'd like to contribute to any of the projects, feel free to open an issue o
 ## Contact
 
 - Anas Ali
-- Email: anasali12665@example.com
+- Email: anasali12665@gmail.com
 - LinkedIn: [@Anas--Ali](https://www.linkedin.com/in/anas--ali)
 
 Feel free to reach out if you have any questions or feedback!
