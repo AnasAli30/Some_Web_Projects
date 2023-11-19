@@ -16,7 +16,7 @@ Welcome to my website portfolio! This repository contains the source code and in
 - CSS
 
 
-### Project 2: [Food Website](food-webx.netlify.app)
+### Project 2: [Food Website](https://food-webx.netlify.app)
 
 ![image](https://github.com/AnasAli30/Some_Web_Projects/assets/133592141/63905278-2bf6-4522-917b-7fc3407c2610)
 
